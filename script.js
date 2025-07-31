@@ -1,3 +1,8 @@
+// Portfolio message function
+function showPortfolioMessage() {
+    alert('📁 Portfolio Demonstration\n\nThis is a showcase of modern SaaS landing page design and development skills. No actual signup process available.\n\nBuilt with HTML5, CSS3, and Vanilla JavaScript.');
+}
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -13,8 +18,10 @@ window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 100) {
         header.style.background = 'rgba(255, 255, 255, 0.98)';
+        header.style.top = '0px'; // Hide banner when scrolled
     } else {
         header.style.background = 'rgba(255, 255, 255, 0.95)';
+        header.style.top = '48px'; // Show banner at top
     }
 });
 
